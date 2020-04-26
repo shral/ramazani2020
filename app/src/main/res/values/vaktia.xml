@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <array name="day_26_4">
+            <item name="hixhri">dita_3</item>
+            <item name="imsaku">04:09</item>
+            <item name="lindja_e_diellit">05:39</item>
+            <item name="dreka">12:59</item>
+            <item name="ikindia">16:52</item>
+            <item name="akshami">20:06</item>
+            <item name="jacija">21:36</item>
+        </array>
+        <array name="day_27_4">
+            <item name="hixhri">dita_4</item>
+            <item name="imsaku">04:07</item>
+            <item name="lindja_e_diellit">05:37</item>
+            <item name="dreka">12:58</item>
+            <item name="ikindia">16:53</item>
+            <item name="akshami">20:07</item>
+            <item name="jacija">21:37</item>
+        </array>
+</resources>
