@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -27,12 +29,24 @@ public class MainActivity extends AppCompatActivity {
         //date
         final int DATE = calendar.get(Calendar.DAY_OF_MONTH);
         final int MONTH = calendar.get(Calendar.MONTH) + 1;
-        TextView dita = findViewById(R.id.dita_id);
+        TextView dita = findViewById(R.id.dita_e_id);
         TextView date = findViewById(R.id.date_id);
         TextView imsaku = findViewById(R.id.imsaku_id);
         TextView iftari = findViewById(R.id.iftari_id);
+        TextView lindjaEDiellit = findViewById(R.id.lindja_e_diellit);
+        TextView dreka = findViewById(R.id.dreka);
+        TextView ikindia = findViewById(R.id.ikindia);
+        TextView jacija = findViewById(R.id.jacija);
         Resources res = getResources();
         Class<R.array> resClass = R.array.class;
+
+        Button tregoVaktijen = (Button) findViewById(R.id.trego_vaktijen);
+        tregoVaktijen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Button clicked");
+            }
+        });
         try {
            int id = resClass.getField("day_" + DATE + "_" + MONTH).getInt(null);
             String[] data = res.getStringArray(id);
@@ -49,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
             date.setText(DATE + "." + MONTH);
             imsaku.setText(data[IMSAKU]);
             iftari.setText(data[AKSHAMI]);
+            lindjaEDiellit.setText(data[LINDJA_E_DIELLIT]);
+            dreka.setText(data[DREKA]);
+            ikindia.setText(data[IKINDIA]);
+            jacija.setText(data[JACIJA]);
 
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
