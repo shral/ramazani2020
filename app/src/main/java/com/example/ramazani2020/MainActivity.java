@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         tregoVaktijen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Button clicked");
                 Intent vaktija = new Intent(MainActivity.this,FullscreenActivity.class);
                 startActivity(vaktija);
             }
@@ -53,15 +52,6 @@ public class MainActivity extends AppCompatActivity {
         try {
            int id = resClass.getField("day_" + DATE + "_" + MONTH).getInt(null);
             String[] data = res.getStringArray(id);
-            System.out.println(id);
-            System.out.println(data[HIXHRI]);
-            System.out.println(data[IMSAKU]);
-            System.out.println(data[LINDJA_E_DIELLIT]);
-            System.out.println(data[DREKA]);
-            System.out.println(data[IKINDIA]);
-            System.out.println(data[JACIJA]);
-            System.out.println(data[AKSHAMI]);
-            System.out.println(DATE);
             dita.setText(data[HIXHRI].split("_")[1]);
             date.setText(DATE + "." + MONTH);
             imsaku.setText(data[IMSAKU]);
