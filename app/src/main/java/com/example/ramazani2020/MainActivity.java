@@ -2,6 +2,7 @@ package com.example.ramazani2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -40,11 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
         Class<R.array> resClass = R.array.class;
 
-        Button tregoVaktijen = (Button) findViewById(R.id.trego_vaktijen);
+        Button tregoVaktijen = (Button) findViewById(R.id.trego_vaktine);
         tregoVaktijen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.println("Button clicked");
+                Intent vaktija = new Intent(MainActivity.this,FullscreenActivity.class);
+                startActivity(vaktija);
             }
         });
         try {
