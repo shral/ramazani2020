@@ -1,8 +1,6 @@
-package com.example.ramazani2020;
+package at.shefki.ramazani2020;
 
 
-import android.app.Activity;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.widget.ImageView;
 

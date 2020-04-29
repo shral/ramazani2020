@@ -1,4 +1,4 @@
-package com.example.ramazani2020;
+package at.shefki.ramazani2020;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.ramazani2020", appContext.getPackageName());
+        assertEquals("at.shefki.ramazani2020", appContext.getPackageName());
     }
 }

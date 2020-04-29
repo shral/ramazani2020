@@ -1,4 +1,4 @@
-package com.example.ramazani2020;
+package at.shefki.ramazani2020;
 
 import org.junit.Test;
 
